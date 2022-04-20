@@ -1,8 +1,199 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+/*@import "npm:@fortawesome/fontawesome-free/css/all.min.css";
+*/
+*{
   box-sizing: border-box;
 }
 
 body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0)
+}
+
+.container{
+  width: 90vw;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(255,255,255);
+  //border-bottom: 1px solid rgb(131, 131, 131); 
+  box-shadow: 0px 0px 3px rgb(131, 131, 131);
+  height: 90px;
+}
+
+#Logo {
+  width: 190px;
+  padding-top: 20px;
+ // float: left;
+}
+
+header input {
+  display: none;
+}
+
+header label{
+  display: none;
+  float: right;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+header nav {
+  margin-top: 40px;
+  float: right;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 320px;
+}
+
+header nav li {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+header nav li a {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0,0,0);
+}
+
+header li a:hover {
+  color: rgb(255, 0, 0);
+}
+
+header .active {
+  color: rgb(156, 16, 16);
+}
+
+
+
+@media screen and (max-width: 767px), screen and (orientation: portrait) {
+  header{
+    padding-top: 0.2rem;
+    width: 86vw;
+    height: 100px;
+  }
+  #mainMenu nav {
+    padding: 0;
+    float: none;
+  }
+  #mainMenu nav ul {
+    display: none;
+  }
+
+  header label{
+    display:block;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+}
+
+main{
+  padding: 50px 0;
+}
+
+footer{
+ // background-color: red;
+ padding: 30px 0;
+}
+
+.wrapper{
+  //background-color: pink;
+  display:grid;
+  grid-template-columns: 200px 2fr 200px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper{
+  border-top: 1px solid rgb(131, 131, 131); 
+ // box-shadow: 0px 0px 3px rgb(131, 131, 131);
+// box-shadow: 0 -3px 2px -2px rgb(131,131,131);
+}
+
+
+#centralMenu {
+  padding-top: 25px;
+  display: block;
+  margin: auto;
+  background-color: red;
+  width: 400px;
+  font-size: 0.9rem;
+}
+
+#centralMenu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#centralMenu li {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#centralMenu li a {
+  text-decoration: none;
+  text-align: center;
+  display:block;
+  color: rgb(0,0,0);
+}
+
+
+#socialMenu {
+  display: block;
+
+  background-color: green;
+  width: 100px;
+  font-size: 0.9rem;
+  float:right;
+}
+
+#centralMenu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#centralMenu li {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#centralMenu li a {
+  text-decoration: none;
+  text-align: center;
+  display:block;
+  color: rgb(0,0,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.bodyantiguo {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -55,3 +246,4 @@ body {
   font-size: 0.75rem;
   text-align: center;
 }
+*/
