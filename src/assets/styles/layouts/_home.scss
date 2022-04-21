@@ -19,10 +19,6 @@ a{
   color: rgb(0,0,0);
 }
 
-a:hover {
-  color: rgb(255, 0, 0);
-}
-
 .active {
   color: rgb(156, 16, 16);
 }
@@ -43,7 +39,7 @@ h2 {
 
 h3 {
   padding: 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .container{
@@ -53,8 +49,13 @@ h3 {
 }
 
 ul{
+  margin-top: 0;
   padding-left: 1.8rem;
   list-style-type: circle;
+}
+
+li{
+  line-height: 1.8rem;
 }
 
 .text-center{
@@ -85,14 +86,14 @@ header input {
 
 header label{
   display: none;
-  margin-top: 15px;
+  margin-top: 17px;
   float: right;
   font-size: 40px;
   text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 header nav {
-  margin-top: 37px;
+  margin-top: 35px;
   float: right;
 }
 
@@ -124,7 +125,7 @@ header nav li a {
   }
 
   header nav {
-    margin-top: 22px;
+    margin-top: 19px;
     display: block;
     float: none;
     background-color: rgb(255,255,255);
@@ -164,6 +165,7 @@ footer h2{
 
 footer h3{
   padding: 0;
+  margin: 8px 0;
 }
 
 #emailNewsletter {
@@ -205,12 +207,12 @@ hr {
   border-bottom: 2px solid rgb(232, 235, 237);
 }
 
-.footerMenus {
+#footerMenus {
   margin: 2rem 0;
   display: flex;
 }
 
-.footerMenus > * {
+#footerMenus > * {
   flex: 0 0 auto;
   height: 40px;
 }
@@ -278,7 +280,7 @@ hr {
     margin: 25px auto;
   }
 
-  .footerMenus{
+  #footerMenus{
     display: block;
   }
 
@@ -349,7 +351,7 @@ hr {
 
 
 
-h1 {
+/*h1 {
   grid-column: 3/6;
   grid-row: 1/2;
   z-index: 2;
@@ -397,7 +399,7 @@ h1 {
   flex: 1; 
 }
 
-.bandItem{
+/*.bandItem{
   padding: 1rem;
 }
 
@@ -461,3 +463,8 @@ h1 {
   text-align: center;
 }
 */
+
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
