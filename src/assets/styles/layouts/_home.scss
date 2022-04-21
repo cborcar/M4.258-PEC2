@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
-/*@import "npm:@fortawesome/fontawesome-free/css/all.min.css";
-*/
+
+/***********************************/
+/********** COSAS COMUNES **********/
+/***********************************/ 
 *{
   box-sizing: border-box;
 }
@@ -12,38 +14,85 @@ body {
   color: rgb(0,0,0)
 }
 
+a{
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.active {
+  color: rgb(156, 16, 16);
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+h2 {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+h3 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
 .container{
-  width: 90vw;
-  max-width: 1200px;
+  width: 85vw;
+  max-width: 1024px;
   margin: auto;
 }
 
+ul{
+  padding-left: 1.8rem;
+  list-style-type: circle;
+}
+
+.text-center{
+  text-align: center;
+}
+
+main{
+  padding: 2rem 0;
+}
+
+/***********************************/
+/******** ESTILO DEL HEADER ********/
+/***********************************/ 
 header {
-  background-color: rgb(255,255,255);
-  //border-bottom: 1px solid rgb(131, 131, 131); 
-  box-shadow: 0px 0px 3px rgb(131, 131, 131);
+  border-bottom: 2px solid rgb(232, 235, 237);
   height: 90px;
 }
 
-#Logo {
-  width: 190px;
-  padding-top: 20px;
- // float: left;
+#headerLogo {
+  width: 230px;
+  margin-top: 25px;
 }
 
 header input {
   display: none;
+  float: right;
 }
 
 header label{
   display: none;
+  margin-top: 15px;
   float: right;
-  padding-top: 10px;
-  font-size: 30px;
+  font-size: 40px;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 header nav {
-  margin-top: 40px;
+  margin-top: 37px;
   float: right;
 }
 
@@ -52,133 +101,276 @@ header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 320px;
+  width: 350px;
 }
 
 header nav li {
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 header nav li a {
-  text-decoration: none;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
   text-align: center;
-  color: rgb(0,0,0);
 }
-
-header li a:hover {
-  color: rgb(255, 0, 0);
-}
-
-header .active {
-  color: rgb(156, 16, 16);
-}
-
-
 
 @media screen and (max-width: 767px), screen and (orientation: portrait) {
-  header{
-    padding-top: 0.2rem;
-    width: 86vw;
-    height: 100px;
+  header {
+    position: sticky; //Esto se hace para que el menú se ponga enfrente de todos los elementos.
   }
-  #mainMenu nav {
-    padding: 0;
+
+  #headerLogo {
+    width: 220px;
+  }
+
+  header nav {
+    margin-top: 22px;
+    display: block;
     float: none;
+    background-color: rgb(255,255,255);
   }
-  #mainMenu nav ul {
+
+  header nav ul {
+    width: 100%;
     display: none;
+    box-shadow: 0 2px 5px rgb(20, 20, 20);
+  }
+
+  header nav li {
+    padding: 1.3rem 0;
+    text-align: center;
+    border: 1px solid rgb(232, 235, 237);
   }
 
   header label{
-    display:block;
+    display: block;
   }
   
-  input:checked  ~ ul{
-    display:block;
+  input:checked  ~ nav ul{
+    display: block;
   }
 }
 
-main{
-  padding: 50px 0;
+/***********************************/
+/******** ESTILO DEL FOOTER ********/
+/***********************************/ 
+footer {
+  padding: 35px 0;
 }
 
-footer{
- // background-color: red;
- padding: 30px 0;
+footer h2{
+  padding: 0;
 }
 
-.wrapper{
-  //background-color: pink;
-  display:grid;
-  grid-template-columns: 200px 2fr 200px;
-  grid-auto-rows: minmax(100px, auto);
+footer h3{
+  padding: 0;
 }
 
-.wrapper{
-  border-top: 1px solid rgb(131, 131, 131); 
- // box-shadow: 0px 0px 3px rgb(131, 131, 131);
-// box-shadow: 0 -3px 2px -2px rgb(131,131,131);
+#emailNewsletter {
+  display: block;
+  width: 450px;
+  margin: 10px auto;
+  padding: 0.5rem; 
 }
 
+#politicaPrivacidad {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+button {
+  border: none;
+  border-radius: 0px;
+  padding: 0.6rem 1.2rem;
+  display: block;
+  color: rgb(255, 255, 255);
+  background-color: rgb(189, 55, 0);
+  text-align: center;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.grid3x1 {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-grid3x1 {
+  width: 32%;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px solid rgb(232, 235, 237);
+}
+
+.footerMenus {
+  margin: 2rem 0;
+  display: flex;
+}
+
+.footerMenus > * {
+  flex: 0 0 auto;
+  height: 40px;
+}
+
+#footerLogo{
+  width: 200px;
+}
 
 #centralMenu {
-  padding-top: 25px;
-  display: block;
   margin: auto;
-  background-color: red;
-  width: 400px;
-  font-size: 0.9rem;
+  width: calc(100% - 450px); //Le quito 450 porque es lo que ocupa el logo, el menú de las redes sociales y algo más
+  min-width: 350px;
 }
 
 #centralMenu ul {
+  margin: auto;
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 #centralMenu li {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-#centralMenu li a {
-  text-decoration: none;
+  margin: auto;
+  width: 25%;
   text-align: center;
-  display:block;
-  color: rgb(0,0,0);
+  padding: 7px 0;
 }
-
 
 #socialMenu {
-  display: block;
-
-  background-color: green;
-  width: 100px;
-  font-size: 0.9rem;
-  float:right;
+  width: 130px;
+  font-size: 1.2rem;
 }
 
-#centralMenu ul {
+#socialMenu ul {
+  margin: auto;
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-#centralMenu li {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-#centralMenu li a {
-  text-decoration: none;
+#socialMenu li {
+  margin: auto;
+  width: 32%;
   text-align: center;
-  display:block;
-  color: rgb(0,0,0);
+  padding: 5px 0;
+}
+@media screen and (max-width: 900px) {
+  #socialMenu {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 767px), screen and (orientation: portrait) {
+  #emailNewsletter {
+    width: 350px;
+  }
+
+  .grid3x1 {
+    display: block;
+  }
+
+  .item-grid3x1 {
+    width: 100%;
+    max-width: 18rem;
+    margin: 25px auto;
+  }
+
+  .footerMenus{
+    display: block;
+  }
+
+  #footerLogo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #centralMenu {
+    width: 100%;
+    min-width: 250px;
+    margin: 30px auto;
+    font-size: 0.9rem;
+  }
+
+  #socialMenu {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
+
+/*************
+/**/
+
+#indexPage{
+  background-image: url("../../assets/images/grid.jpg");
+  background-size: cover;
+}
+
+#indexPage header {
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+
+.grid {
+  //background-image: url("../../assets/images/grid.jpg");
+ // background-size: cover;
+  display: grid;
+ // grid-template-columns: 2fr minmax(10em, max-content) minmax(14em, max-content) minmax(1em, 1fr) fit-content(28em) calc(2em + 0.5vw);
+  //grid-template-rows: 325vh 40vh 15vh;
+
+  grid-template-columns: 12em 1fr 1fr 1fr;
+  grid-template-rows: 10rem 15rem 5rem;
+  grid-template-areas: 'a a a a'
+                       'b b e d'
+                       'c c e d';
+}
+
+.grid-item-1 { 
+  grid-area: a;
+
+ }
+.grid-item-2 { grid-area: b; }
+.grid-item-3 { grid-area: c; 
+  background-color: rgba(255,255,255,0.6);}
+.grid-item-4 { 
+  background-color: rgba(0,0,0,0.6);
+  grid-area: d;
+}
+.grid-item-5 { grid-area: e; }
+
+
+
+h1 {
+  grid-column: 3/6;
+  grid-row: 1/2;
+  z-index: 2;
+  padding-left: 0.25em;
+  margin-bottom: initial;
+}
+
+@supports (display: grid) {
+  @media screen and (max-width: 767px), screen and (orientation: portrait) {
+    .grid {
+      //max-width: none;
+      //padding: 0;
+      //display: grid;
+     // grid-template-columns: 2fr minmax(10em, -webkit-max-content) minmax(14em, -webkit-max-content) minmax(1em, 1fr) fit-content(28em) calc(2em + 0.5vw);
+      grid-template-columns: 2fr minmax(10em, max-content) minmax(14em, max-content) minmax(1em, 1fr) fit-content(28em) calc(2em + 0.5vw);
+      grid-template-rows: 35vh 40vh 15vh;
+      grid-template-areas:  'd d e e'
+                            'b b a a'
+                            'c c a a';
+    }
+  }
 }
 
 
@@ -190,6 +382,28 @@ footer{
 
 
 
+
+
+.bands{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100%;
+  flex-direction: column; 
+}
+
+.row {
+  display: flex;
+  flex: 1; 
+}
+
+.bandItem{
+  padding: 1rem;
+}
+
+.bandItem img{
+  width: 100%;
+}
 
 
 /*
