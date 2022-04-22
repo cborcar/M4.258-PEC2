@@ -1,0 +1,305 @@
+/***********************************/
+/********** COSAS COMUNES **********/
+/***********************************/ 
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0)
+}
+
+a{
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+
+.active {
+  color: rgb(156, 16, 16);
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+h2 {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+h3 {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.container{
+  width: 85vw;
+  max-width: 1024px;
+  margin: auto;
+}
+
+ul{
+  margin-top: 0;
+  padding-left: 1.8rem;
+  list-style-type: circle;
+}
+
+li{
+  line-height: 1.8rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+main{
+  padding: 2rem 0;
+}
+
+/***********************************/
+/******** ESTILO DEL HEADER ********/
+/***********************************/ 
+header {
+  border-bottom: 2px solid rgb(232, 235, 237);
+  height: 90px;
+}
+
+#headerLogo {
+  width: 230px;
+  margin-top: 25px;
+}
+
+header input {
+  display: none;
+  float: right;
+}
+
+header label{
+  display: none;
+  margin-top: 17px;
+  float: right;
+  font-size: 40px;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+header nav {
+  margin-top: 35px;
+  float: right;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 350px;
+}
+
+header nav li {
+  width: 100%;
+  font-size: 1rem;
+}
+
+header nav li a {
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+  text-align: center;
+}
+
+@media screen and (max-width: 767px), screen and (orientation: portrait) {
+  header {
+    position: sticky; //Esto se hace para que el menú se ponga enfrente de todos los elementos.
+  }
+
+  #headerLogo {
+    width: 220px;
+  }
+
+  header nav {
+    margin-top: 19px;
+    display: block;
+    float: none;
+    background-color: rgb(255,255,255);
+  }
+
+  header nav ul {
+    width: 100%;
+    display: none;
+    box-shadow: 0 2px 5px rgb(20, 20, 20);
+  }
+
+  header nav li {
+    padding: 1.3rem 0;
+    text-align: center;
+    border: 1px solid rgb(232, 235, 237);
+  }
+
+  header label{
+    display: block;
+  }
+  
+  input:checked  ~ nav ul{
+    display: block;
+  }
+}
+
+/***********************************/
+/******** ESTILO DEL FOOTER ********/
+/***********************************/ 
+footer {
+  padding: 35px 0;
+}
+
+footer h2{
+  padding: 0;
+}
+
+footer h3{
+  padding: 0;
+  margin: 8px 0;
+}
+
+#emailNewsletter {
+  display: block;
+  width: 450px;
+  margin: 10px auto;
+  padding: 0.5rem; 
+}
+
+#politicaPrivacidad {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+button {
+  border: none;
+  border-radius: 0px;
+  padding: 0.6rem 1.2rem;
+  display: block;
+  color: rgb(255, 255, 255);
+  background-color: rgb(189, 55, 0);
+  text-align: center;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.grid3x1 {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-grid3x1 {
+  width: 32%;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px solid rgb(232, 235, 237);
+}
+
+#footerMenus {
+  margin: 2rem 0;
+  display: flex;
+}
+
+#footerMenus > * {
+  flex: 0 0 auto;
+  height: 40px;
+}
+
+#footerLogo{
+  width: 200px;
+}
+
+#centralMenu {
+  margin: auto;
+  width: calc(100% - 450px); //Le quito 450 porque es lo que ocupa el logo, el menú de las redes sociales y algo más
+  min-width: 350px;
+}
+
+#centralMenu ul {
+  margin: auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+#centralMenu li {
+  margin: auto;
+  width: 25%;
+  text-align: center;
+  padding: 7px 0;
+}
+
+#socialMenu {
+  width: 130px;
+  font-size: 1.2rem;
+}
+
+#socialMenu ul {
+  margin: auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+#socialMenu li {
+  margin: auto;
+  width: 32%;
+  text-align: center;
+  padding: 5px 0;
+}
+@media screen and (max-width: 900px) {
+  #socialMenu {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 767px), screen and (orientation: portrait) {
+  #emailNewsletter {
+    width: 300px;
+  }
+
+  .grid3x1 {
+    display: block;
+  }
+
+  .item-grid3x1 {
+    width: 100%;
+    max-width: 18rem;
+    margin: 25px auto;
+  }
+
+  #footerMenus{
+    display: block;
+  }
+
+  #footerLogo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #centralMenu {
+    width: 100%;
+    min-width: 250px;
+    margin: 30px auto;
+    font-size: 0.9rem;
+  }
+
+  #socialMenu {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
