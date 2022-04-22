@@ -1,0 +1,24 @@
+/***********************************/
+/************ BANDAS ***************/
+/***********************************/ 
+
+#bandGrid{
+  margin: auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.band{
+  width: 33%;
+}
+
+@media screen and (max-width: 767px), screen and (orientation: portrait) {
+  #bandGrid{
+    display: block;
+  }
+  .band{
+    width: 100%;
+    display: block;
+  }
+}

@@ -1,85 +1,91 @@
 <footer>
     <div class="container">
-        <!-- Newsletter-->
-        <section class="newsletter">
+        <!-- Newsletter. Elementos hechos con Bootstrap -->
+        <section id="newsLetter">
             <h2 class="text-center">Suscríbete a nuestro newsletter</h2>
             <form>
                 <div>
-				    <input id="emailNewsletter" type="email" placeholder="Correo electrónico" required />
+				    <input id="emailNewsletter" class="form-control" type="email" placeholder="Correo electrónico" required />
 				</div>
                 <div id="politicaPrivacidad">
-                    <input id="politica" type="checkbox" value="Aceptación de política de privacidad" required/>
-                    <label for="politica"> He leído y acepto la política de privacidad</label>
+                    <input type="checkbox" class="form-check-input" id="politicaPrivacidad" required/>
+                    <label class="form-check-label" for="politicaPrivacidad">He leído y acepto la política de privacidad</label>
                 </div>
-                <div>
-                    <button>Suscríbeme</button>
+                <div id="btnSuscribirse">
+                    <button type="submit" class="btn btn-success">Suscríbeme</button>
                 </div>
 			</form>
         </section>
 
-        <!-- Information -->
-        <section class="grid3x1">
-            <div class="item-grid3x1">
-                <h3>Festival</h3>
-                <ul>
-                    <li><a href="#">Cartel 2022</a></li>
-                    <li><a href="#">Fechas</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Palcos VIP</a></li>
-                    <li><a href="#">Menores de edad</a></li>
-                </ul>
-            </div>
-            <div class="item-grid3x1">
-                <h3>Información de interés</h3>
-                <ul>
-                    <li><a href="#">Venta de entradas</a></li>
-                    <li><a href="#">Acceso al recinto</a></li>
-                    <li><a href="#">Alojamiento</a></li>
-                    <li><a href="#">Donde comer</a></li>
-                    <li><a href="#">Aparcamientos</a></li>
-                </ul>
-            </div>
-            <div class="item-grid3x1">
-                <h3>Información legal</h3>
-                <ul>
-                    <li><a href="#">Aviso legal</a></li>
-                    <li><a href="#">Politica de privacidad</a></li>
-                    <li><a href="#">Politica de cookies</a></li>
-                </ul>
-            </div>
+        <!-- Información. Rejilla hecha con Bootstrap -->
+        <section id="footerLists">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                    <div class="element">
+                        <h3>Festival</h3>
+                        <ul>
+                            <li><a href="#">Cartel 2022</a></li>
+                            <li><a href="#">Fechas</a></li>
+                            <li><a href="#">Noticias</a></li>
+                            <li><a href="#">Palcos VIP</a></li>
+                            <li><a href="#">Menores de edad</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                    <div class="element">
+                        <h3>Información de interés</h3>
+                        <ul>
+                            <li><a href="#">Venta de entradas</a></li>
+                            <li><a href="#">Acceso al recinto</a></li>
+                            <li><a href="#">Alojamiento</a></li>
+                            <li><a href="#">Donde comer</a></li>
+                            <li><a href="#">Aparcamientos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-xl-4">
+                    <div class="element">
+                        <h3>Información legal</h3>
+                        <ul>
+                            <li><a href="#">Aviso legal</a></li>
+                            <li><a href="#">Politica de privacidad</a></li>
+                            <li><a href="#">Politica de cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>        
         </section>
+
         <hr />
 
-        <!-- Footer menus -->
-        <div id="footerMenus">
-            <!-- Logo -->
-            <picture>
-                <img id="footerLogo" src="./assets/images/logo.png?as=webp" alt="Logo">
-            </picture>
-        
-            <!-- Central Menu -->
-            <div id="centralMenu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="bandas.html">Bandas</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        
-            <!-- Social Menu -->
-            <div id="socialMenu">
-                <nav>
-                    <ul>
-                        <li><a href="#" alt="Google+"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                        <li><a href="#" alt="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#" alt="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                </nav>     
-            </div>
-
-        </div>
+        <!-- Footer menús. Rejilla hecha con Bootstrap -->
+        <section id="footerMenus">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <img id="footerLogo" src="./assets/images/logo.png" alt="Logo">
+                </div>
+                <div class="col-12 col-sm-8 col-md-7">
+                    <nav id="centralMenu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="bandas.html">Bandas</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-sm-12 col-md-2">
+                    <!-- Social menú. Iconos con FontAwesome -->
+                    <nav id="socialMenu">
+                        <ul>
+                            <li><a href="#" alt="Google+"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><a href="#" alt="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" alt="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </nav>    
+                </div>
+            </div>        
+        </section>
     </div>
   </footer>

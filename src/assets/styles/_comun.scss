@@ -69,12 +69,12 @@ main{
 /***********************************/ 
 header {
   border-bottom: 2px solid rgb(232, 235, 237);
-  height: 90px;
+  height: 100px;
 }
 
 #headerLogo {
   width: 230px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 header input {
@@ -84,14 +84,14 @@ header input {
 
 header label{
   display: none;
-  margin-top: 17px;
+  margin-top: 20px;
   float: right;
   font-size: 40px;
   text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 header nav {
-  margin-top: 35px;
+  margin-top: 40px;
   float: right;
 }
 
@@ -123,7 +123,7 @@ header nav li a {
   }
 
   header nav {
-    margin-top: 19px;
+    margin-top: 25px;
     display: block;
     float: none;
     background-color: rgb(255,255,255);
@@ -136,9 +136,14 @@ header nav li a {
   }
 
   header nav li {
-    padding: 1.3rem 0;
+
     text-align: center;
     border: 1px solid rgb(232, 235, 237);
+  }
+
+  header nav li a{
+    line-height: 4rem;
+    display: block;
   }
 
   header label{
@@ -167,10 +172,8 @@ footer h3{
 }
 
 #emailNewsletter {
-  display: block;
   width: 450px;
-  margin: 10px auto;
-  padding: 0.5rem; 
+  margin: 15px auto 5px auto;
 }
 
 #politicaPrivacidad {
@@ -178,51 +181,24 @@ footer h3{
   font-size: 0.8rem;
 }
 
-button {
-  border: none;
-  border-radius: 0px;
-  padding: 0.6rem 1.2rem;
-  display: block;
-  color: rgb(255, 255, 255);
-  background-color: rgb(189, 55, 0);
+#btnSuscribirse {
+  margin: 1rem 0;
   text-align: center;
-  margin: 1rem auto;
-  cursor: pointer;
-}
-
-.grid3x1 {
-  margin-top: 35px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.item-grid3x1 {
-  width: 32%;
 }
 
 hr {
   border: none;
   border-bottom: 2px solid rgb(232, 235, 237);
-}
-
-#footerMenus {
   margin: 2rem 0;
-  display: flex;
 }
 
-#footerMenus > * {
-  flex: 0 0 auto;
-  height: 40px;
+#footerMenus nav{
+  padding: 15px 0;
 }
 
 #footerLogo{
-  width: 200px;
-}
-
-#centralMenu {
-  margin: auto;
-  width: calc(100% - 450px); //Le quito 450 porque es lo que ocupa el logo, el menú de las redes sociales y algo más
-  min-width: 350px;
+  width: 210px;
+  padding: 15px 0;
 }
 
 #centralMenu ul {
@@ -233,14 +209,11 @@ hr {
 }
 
 #centralMenu li {
-  margin: auto;
   width: 25%;
   text-align: center;
-  padding: 7px 0;
 }
 
 #socialMenu {
-  width: 130px;
   font-size: 1.2rem;
 }
 
@@ -253,14 +226,6 @@ hr {
 
 #socialMenu li {
   margin: auto;
-  width: 32%;
-  text-align: center;
-  padding: 5px 0;
-}
-@media screen and (max-width: 900px) {
-  #socialMenu {
-    width: 100px;
-  }
 }
 
 @media screen and (max-width: 767px), screen and (orientation: portrait) {
@@ -268,35 +233,21 @@ hr {
     width: 300px;
   }
 
-  .grid3x1 {
-    display: block;
-  }
-
-  .item-grid3x1 {
-    width: 100%;
-    max-width: 18rem;
-    margin: 25px auto;
-  }
-
-  #footerMenus{
-    display: block;
-  }
-
   #footerLogo {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #footerLogo {
+    width: 210px;
     display: block;
     margin: 0 auto;
   }
 
-  #centralMenu {
-    width: 100%;
-    min-width: 250px;
-    margin: 30px auto;
-    font-size: 0.9rem;
-  }
-
-  #socialMenu {
-    width: 220px;
-    margin: 0 auto;
+  .element {
+    width: 15rem;
+    margin: auto;
   }
 }
 

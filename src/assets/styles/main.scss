@@ -1,5 +1,5 @@
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
-//@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap";
 
 /**
  * Use this file to import partials.
@@ -29,6 +29,9 @@
 @import "comun"; //Estilo común a todas las páginas
 
 @import "layouts/home"; //Estilo propio de index
+
+@import "layouts/bandas"; //Estilo propio de bandas
+
 
 /**
  * Do NOT include anything else in this file!
