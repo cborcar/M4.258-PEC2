@@ -13,11 +13,12 @@
 .grid {
   display: grid;
   grid-template-columns: auto auto 100px auto;
-  grid-template-rows: auto 50px auto;
+  grid-template-rows: auto 50px auto 10px;
   gap: 20px;
   grid-template-areas:  'a a c c'
                         'a a c c'
-                        'd d e b';
+                        'd d d b'
+                        'e e e e';
 }
 
 .grid > div{
@@ -46,7 +47,8 @@
     .grid {
       grid-template-areas:  'd a a a'
                             'e e e e'
-                            'b b b c';
+                            'b b b c'
+                            'f f f f';
     }
   }
 }
