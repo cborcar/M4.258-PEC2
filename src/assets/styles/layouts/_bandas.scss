@@ -2,19 +2,20 @@
 /************ BANDAS ***************/
 /***********************************/ 
 
-#bandGrid{
-  margin: auto;
+#bandsGrid{
   display: flex;
-  list-style: none;
   padding: 0;
 }
 
 .band{
-  width: 33%;
+  width: 90%;
+}
+.band img{
+  width: 100%;
 }
 
 @media screen and (max-width: 767px), screen and (orientation: portrait) {
-  #bandGrid{
+  #bandsGrid{
     display: block;
   }
   .band{
