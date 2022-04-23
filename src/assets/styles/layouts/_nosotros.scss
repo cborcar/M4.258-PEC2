@@ -1,0 +1,37 @@
+/***********************************/
+/************ NOSOTROS *************/
+/***********************************/ 
+
+#articleTitle{
+  width: 100%;
+  height: 450px;
+  background-image: url("../../assets/images/article.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  display: flex;
+  color: rgb(255,255,255);
+  text-shadow: 0 0 1rem rgb(0, 0, 0);
+  margin-bottom: 2rem;
+}
+
+#articleTitle p {
+  font-size: 3rem;
+}
+
+#articleTitle address{
+  font-size: 1.2rem;
+}
+
+.principio{
+  display: flex;
+}
+
+.item-icon{
+  padding-right: 0.8rem;
+}
+
+#imgRecinto{
+  width: 100%;
+  margin: 10px 0 30px 0;
+}

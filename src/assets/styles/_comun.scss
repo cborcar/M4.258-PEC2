@@ -25,6 +25,10 @@ p {
   font-size: 1rem;
 }
 
+.bigtext {
+  font-size: 1.4rem;
+}
+
 h1 {
   padding: 1rem 0;
   font-size: 2rem;
@@ -50,6 +54,14 @@ h4 {
   width: 85vw;
   max-width: 1024px;
   margin: auto;
+  padding: 0;
+}
+
+.container2{
+  width: 70vw;
+  max-width: 700px;
+  margin: auto;
+  padding: 0;
 }
 
 ul{
@@ -66,8 +78,8 @@ li{
   text-align: center;
 }
 
-main{
-  padding: 1rem 0;
+.padding-top{
+  padding-top: 2rem;
 }
 
 /***********************************/
@@ -142,7 +154,6 @@ header nav li a {
   }
 
   header nav li {
-
     text-align: center;
     border: 1px solid rgb(232, 235, 237);
   }
@@ -189,13 +200,12 @@ footer h3{
 }
 
 #btnSuscribirse {
-  margin: 1rem 0 1.5rem 0;
+  margin: 1rem 0 1.8rem 0;
   text-align: center;
 }
 
-hr {
-  border: none;
-  border-bottom: 2px solid rgb(232, 235, 237);
+.greyborder {
+  border-top: 2px solid rgb(232, 235, 237);
   margin: 1.5rem 0;
 }
 

@@ -9,12 +9,12 @@
 }
 
 .band{
-  width: 90%;
+  box-sizing: border-box;
+  padding: 10px 15px;
 }
 
 .band img{
   width: 100%;
-  padding-top: 10px;
 }
 
 .band h3{
