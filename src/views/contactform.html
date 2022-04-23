@@ -1,29 +1,41 @@
 <main class="container">
   <h1 class="text-center padding-top">Contacto</h1>
-  <p>Tienes alguna duda bla bla bla?</p>
-  <form name="contact" method="POST" data-netlify="true">
-    <p>
-      <label>Tu nombre: <input type="text" name="name" required /></label>
-    </p>
-    <p>
-      <label>Tu correo electrónico: <input type="email" name="email" required /></label>
-    </p>
-    <p>
-      <label>Motivo: <select name="role[]" multiple>
-        <option value="leader">Compra de entradas</option>
-        <option value="follower">Alojamiento</option>
-        <option value="follower" selected>Otro</option>
-      </select></label>
-    </p>
-    <p>
-      <label>Mensaje: <textarea name="message" required></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Enviar</button>
-    </p>
+  <p class="text-justify">¿Tienes alguna duda o algo que contarnos? Realiza tu consulta a través del siguiente formulario y te responderemos lo más rápido posible. Por favor, antes de hacer la consulta, revisa la información que hay publicada en la web, es posible que ahí se encuentre la información que estás buscando.</p>
+
+  <!-- Formulario de contacto -->
+  <form id="contactForm" name="contact" method="POST" data-netlify="true">
+
+    <div class="form-group margen">
+      <label for="contactName">Nombre:</label>
+      <input id="contactName" class="form-control" type="text" name="name" placeholder="Tu nombre" required />
+    </div>
+
+    <div class="form-group margen">
+      <label for="contactEmail">Correo electrónico:</label>
+      <input id="contactEmail" class="form-control" type="email" name="email" placeholder="Tu correo electrónico" required />
+      <small id="emailHelp" class="form-text text-muted">Lo necesitamos para responderte.</small>
+    </div>
+
+    <div class="form-group margen">
+      <label for="contactMovito">Motivo de la consulta:</label>
+      <select id="contactMovito" class="form-control" name="motivo" required>
+        <option value="">Selecciona un motivo</option>
+        <option value="CompraEntradas">Compra de entradas</option>
+        <option value="Alojamiento">Alojamiento y reservas</option>
+        <option value="Servicios">Servicios</option>
+        <option value="Otro">Otro tipo de consulta</option>
+      </select>
+    </div>
+
+    <div class="form-group margen">
+      <label for="contactMessage">Mensaje:</label>
+      <textarea id="contactMessage" class="form-control" name="message" rows="3" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
 
-  <div id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7813.185359145826!2d-2.1685912430693817!3d37.42386205798911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd65484080dc7479%3A0x6208974b6340d428!2s04813%20Llano%20de%20Los%20Olleres%2C%20Almer%C3%ADa!5e0!3m2!1ses!2ses!4v1650743287362!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div id="location-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7813.185359145826!2d-2.1685912430693817!3d37.42386205798911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd65484080dc7479%3A0x6208974b6340d428!2s04813%20Llano%20de%20Los%20Olleres%2C%20Almer%C3%ADa!5e0!3m2!1ses!2ses!4v1650743287362!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </main>
