@@ -40,6 +40,12 @@ h3 {
   font-size: 1.4rem;
 }
 
+h4 {
+  padding: 0;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
 .container{
   width: 85vw;
   max-width: 1024px;
@@ -61,7 +67,7 @@ li{
 }
 
 main{
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 /***********************************/
@@ -172,7 +178,8 @@ footer h3{
 }
 
 #emailNewsletter {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   margin: 15px auto 5px auto;
 }
 
@@ -182,23 +189,23 @@ footer h3{
 }
 
 #btnSuscribirse {
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem 0;
   text-align: center;
 }
 
 hr {
   border: none;
   border-bottom: 2px solid rgb(232, 235, 237);
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 #footerMenus nav{
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 #footerLogo{
   width: 210px;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 #centralMenu ul {
