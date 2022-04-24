@@ -10,7 +10,7 @@
   border-bottom: none;
 }
 
-.grid {
+#coverpage-grid {
   padding-top: 1.2rem;
   display: grid;
   grid-template-columns: auto auto 100px auto;
@@ -23,14 +23,14 @@
                         'e e e b';
 }
 
-.grid > div{
+#coverpage-grid > div{
   box-shadow: 0 2px 5px rgb(50, 50, 50);
   border-radius: 1rem;
   text-align: center;
   padding: 20px 25px 0px 25px;
 }
 
-.grid p{
+#coverpage-grid p{
   font-size: 0.9rem;
 }
 
@@ -48,7 +48,7 @@
 
 @supports (display: grid) {
   @media screen and (max-width: 767px), screen and (orientation: portrait) {
-    .grid {
+    #coverpage-grid {
       grid-template-rows: auto 50px auto 0;
       grid-template-areas:  'd a a a'
                             'e e e e'
