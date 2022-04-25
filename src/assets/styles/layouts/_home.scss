@@ -49,11 +49,11 @@
 @supports (display: grid) {
   @media screen and (max-width: 767px), screen and (orientation: portrait) {
     #coverpage-grid {
-      grid-template-rows: auto 50px auto 0;
-      grid-template-areas:  'd a a a'
-                            'e e e e'
-                            'b b b c'
-                            'f f f f';
+      grid-template-rows: auto auto 50px auto;
+      grid-template-areas:  'c a a a'
+                            'c a a a'
+                            'd d d d'
+                            'b b b e';
     }
     .grid-item-1{
       margin-top: 0px;
