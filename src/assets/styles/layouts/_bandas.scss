@@ -2,39 +2,39 @@
 /************ BANDAS ***************/
 /***********************************/ 
 
-#bandsGrid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  //grid-template-rows: 100px 100px;
+#bandsFlexBox {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.band{
+.bands-item {
+  flex: 1 1 30%;
   box-sizing: border-box;
   padding: 10px 15px;
 }
 
-.band img{
+.bands-item img {
   width: 100%;
 }
 
-.band h3{
+.bands-item h3 {
   padding: 1rem 0 0 0;
   margin: 0.1rem;
 }
 
-.band p {
+.bands-item p {
   text-align: justify;
   padding: 1rem;
 }
 
 @media screen and (max-width: 767px) {
-  #bandsGrid{
-    grid-template-columns: 1fr 1fr;
+  .bands-item {
+    flex: 1 1 50%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #bandsGrid{
-    grid-template-columns: 1fr;
+  .bands-item {
+    flex: 1 1 100%;
   }
 }

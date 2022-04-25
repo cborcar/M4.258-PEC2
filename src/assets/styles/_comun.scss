@@ -217,24 +217,21 @@ footer h3{
   margin: 1.5rem 0;
 }
 
-#footerMenus nav{
-  padding: 15px 0;
-}
-
 #footerLogo{
-  width: 210px;
-  padding: 15px 0;
+   width: 210px;
+   padding: 15px 0;
 }
 
 #centralMenu ul {
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
 
 #centralMenu li {
-  width: 25%;
+  flex: 1 1 25%;
   text-align: center;
 }
 
@@ -245,12 +242,17 @@ footer h3{
 #socialMenu ul {
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
 
 #socialMenu li {
   margin: auto;
+}
+
+#footerMenus nav{
+  padding: 15px 0;
 }
 
 @media screen and (max-width: 767px), screen and (orientation: portrait) {
